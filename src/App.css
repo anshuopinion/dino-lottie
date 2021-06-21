@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sky {
+  height: 100vh;
+  background-image: url("./images/s.png");
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.grass {
+  height: 600px;
+  width: 300%;
+  display: block;
+  background-image: url("./images/gh.png");
+  position: absolute;
+  bottom: 0;
+  left: -2400px;
+  right: 0;
+  overflow-y: hidden;
+  background-repeat: repeat-x;
+  animation: grass 15s linear infinite;
+}
+@keyframes grass {
+  100% {
+    transform: translateX(2400px);
+  }
+}
+
+.mountain {
+  height: 500px;
+  width: 500%;
+  display: block;
+  background-image: url("./images/m.png");
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: -1400px;
+  right: 0;
+  overflow-y: hidden;
+  background-repeat: repeat-x;
+  animation: mountain 30s linear infinite;
+}
+@keyframes mountain {
+  100% {
+    transform: translateX(1400px);
+  }
+}
+
+.dino {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+}
